@@ -1,6 +1,7 @@
 package cn.wusx.springboot.config;
 
 import cn.wusx.springboot.common.interceptor.Test1Interceptor;
+import cn.wusx.springboot.common.interceptor.Test2Interceptor;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
@@ -52,6 +53,11 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
                 .addPathPatterns("/**") // 添加拦截路径
                 .excludePathPatterns(// 添加排除拦截路径
                         "/hello").order(0);//执行顺序
+        registry.addInterceptor(new Test2Interceptor()) // 添加拦截器2
+                .addPathPatterns("/**") // 添加拦截路径
+                .excludePathPatterns(// 添加排除拦截路径
+                        "/test1")
+                .order(1);
         super.addInterceptors(registry);
     }
 //	@Autowired
