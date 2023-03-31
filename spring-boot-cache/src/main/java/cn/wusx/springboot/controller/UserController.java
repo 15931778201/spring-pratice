@@ -2,7 +2,9 @@ package cn.wusx.springboot.controller;
 
 import java.util.List;
 
+import cn.wusx.springboot.common.aop.ControllerWebLog;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -51,5 +53,12 @@ public class UserController {
 	public String updateUser(UserEntity user) {
 		userService.updateUser(user);
 		return "update success";
+	}
+
+	@GetMapping("/getOne")
+	@ControllerWebLog(name = "查询", intoDb = true)
+	public String getOne(Long id, String name) {
+
+		return "1234";
 	}
 }
