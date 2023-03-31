@@ -1,4 +1,4 @@
-package cn.zwqh.springboot;
+package cn.wusx.springboot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

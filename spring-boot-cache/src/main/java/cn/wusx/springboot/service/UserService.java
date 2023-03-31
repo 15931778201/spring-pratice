@@ -1,18 +1,19 @@
-package cn.zwqh.springboot.dao;
+package cn.wusx.springboot.service;
 
 import java.util.List;
 
-import cn.zwqh.springboot.model.UserEntity;
+import cn.wusx.springboot.model.UserEntity;
 
-public interface UserDao {
-	//mapper.xml方式 
+public interface UserService {
+
 	/**
-	 * 获取所有用户
+	 * 查找所有
 	 * @return
 	 */
 	List<UserEntity> getAll();
 	/**
 	 * 根据id获取用户
+	 * @param id
 	 * @return
 	 */
 	UserEntity getOne(Long id);
@@ -26,11 +27,10 @@ public interface UserDao {
 	 * @param user
 	 */
 	void updateUser(UserEntity user);
-	/**
-	 * 删除用户
-	 * @param id
-	 */
-	void deleteUser(Long id);
-		
+	
+	
+	void deleteAll1();
+	
+	void deleteAll2();
 
 }

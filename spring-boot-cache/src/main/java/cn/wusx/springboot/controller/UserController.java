@@ -1,4 +1,4 @@
-package cn.zwqh.springboot.controller;
+package cn.wusx.springboot.controller;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import cn.zwqh.springboot.model.UserEntity;
-import cn.zwqh.springboot.service.UserService;
+import cn.wusx.springboot.model.UserEntity;
+import cn.wusx.springboot.service.UserService;
 
 @RestController
 @RequestMapping("/user")

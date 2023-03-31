@@ -1,4 +1,4 @@
-package cn.zwqh.springboot.model;
+package cn.wusx.springboot.model;
 
 import java.io.Serializable;
 

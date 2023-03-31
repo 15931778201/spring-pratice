@@ -1,4 +1,4 @@
-package cn.zwqh.springboot.service.impl;
+package cn.wusx.springboot.service.impl;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cache.annotation.Caching;
 import org.springframework.stereotype.Service;
 
-import cn.zwqh.springboot.dao.UserDao;
-import cn.zwqh.springboot.model.UserEntity;
-import cn.zwqh.springboot.service.UserService;
+import cn.wusx.springboot.dao.UserDao;
+import cn.wusx.springboot.model.UserEntity;
+import cn.wusx.springboot.service.UserService;
 
 @Service
 @CacheConfig(cacheNames = {"userCache"})
