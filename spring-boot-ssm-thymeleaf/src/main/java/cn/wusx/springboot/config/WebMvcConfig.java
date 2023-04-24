@@ -41,6 +41,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("/index");//设置默认跳转视图为 /index
+        registry.addViewController("/error/500").setViewName("/error/500"); // 2.异常信息展现
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
         super.addViewControllers(registry);
 
@@ -50,13 +51,13 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
     public void addInterceptors(InterceptorRegistry registry) {
         // 注册自定义拦截器，添加拦截路径和排除拦截路径
         registry.addInterceptor(new Test1Interceptor()) // 添加拦截器
-                .addPathPatterns("/**") // 添加拦截路径
+                .addPathPatterns("/test2") // 添加拦截路径
                 .excludePathPatterns(// 添加排除拦截路径
-                        "/hello").order(0);//执行顺序
+                        "/**").order(0);//执行顺序
         registry.addInterceptor(new Test2Interceptor()) // 添加拦截器2
-                .addPathPatterns("/**") // 添加拦截路径
+                .addPathPatterns("/test2") // 添加拦截路径
                 .excludePathPatterns(// 添加排除拦截路径
-                        "/test1")
+                        "/**")
                 .order(1);
         super.addInterceptors(registry);
     }
