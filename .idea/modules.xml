@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/framework.iml" filepath="$PROJECT_DIR$/.idea/framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-cache/spring-boot-cache.iml" filepath="$PROJECT_DIR$/spring-boot-cache/spring-boot-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-ssm-thymeleaf/spring-boot-mybatis (1).iml" filepath="$PROJECT_DIR$/spring-boot-ssm-thymeleaf/spring-boot-mybatis (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis-mulidatasource/spring-boot-mybatis (2).iml" filepath="$PROJECT_DIR$/spring-boot-mybatis-mulidatasource/spring-boot-mybatis (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-servlet/spring-boot-servlet.iml" filepath="$PROJECT_DIR$/spring-boot-servlet/spring-boot-servlet.iml" />
+    </modules>
+  </component>
+</project>
